@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta chareset="utf-8" />
+	<title>표를 나타내는 태그 - table</title>
+	<!--표 형식의 레이아웃을 만듦-->
+	<!--유지보수의 어려움, 한계성-->
+</head>
+<body>
+	<table border="1">
+		<!--border ...-->
+		<tr>	<!--1행-->
+			<td rowspan="4">중간고사 성적</td>
+			<!--rowspan="n" ...n만큼 행을 합침-->
+		</tr>
+		<tr>	<!--2행-->
+			<td>국어</td>	<!--열-->
+			<td>영어</td>
+			<td>수학</td>
+		</tr>
+		<tr>	<!--3행-->
+			<td>100</td>
+			<td>60</td>
+			<td>80</td>
+		</tr>
+		<tr>	<!--4행-->
+			<td colspan="2">평균</td>
+			<!--colspan="n" ...n만큼 열을 합침-->
+			<td>80</td>
+		</tr>
+	</table>
+</body>
+</html>
