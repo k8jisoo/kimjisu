@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>모같코app팀 HTML과제1_김지수</title>
+</head>
+<body>
+	<div>
+		<h1>모같코 지원서</h1>
+		<h3>(*모든 입력란은 필수입력입니다.)</h3>
+		<!--required-->
+	</div>
+
+	<form action="file:///C:/%EA%B9%80%EC%A7%80%EC%88%98/%EB%AA%A8%EA%B0%99%EC%BD%94%20HTML,CSS,JavaScript/HTML/%EB%AA%A8%EA%B0%99%EC%BD%94_HTML%EA%B3%BC%EC%A0%9C2.html" method="post">
+
+		<div>
+			<h4>현재 하시고 있는 일은 무엇인가요?</h4>
+			<input type="radio" name="job" value="univ" checked="checked">대학생(재학생, 휴학생)<br>
+			<input type="radio" name="job" value="work">직장인<br>
+			<input type="radio" name="job" value="pre">취업준비생<br>
+			<input type="radio" name="job" value="aso">기타...
+		</div>
+
+		<div>
+			<h4>간단하게 자기소개 적어주세요^^(*최대 10자)</h4>
+			<h5>(이름, 성별, 취미 등)</h5>
+			<input type="text" name="intro" value="" placeholder="짧게" maxlength="10" required>		<!--최대 10자-->
+		</div>
+
+		<div>
+			<h4>나이가 어떻게 될까요?</h4>
+			<h5>예)20</h5>
+			<input type="number" name="age" placeholder="20" required>	<!--숫자만 가능, 미입력시 희미한 글자-->
+		</div>
+
+		<div>
+			<h4>사는 곳이 어떻게 될까요?</h4>
+			<h5>(근처 지하철역 또는 00구 00동 이라고 적어주시면 됩니다)</h5>
+			<input type="text" name="home" placeholder="집" required>
+		</div>
+
+		<div>
+			<h4>연락처</h4>
+			<h5>예)01011112222</h5>
+			<input type="tel" name="tel" placeholder="01011112222" required>
+		</div>
+
+		<div>
+			<h4>이메일</h4>
+			<h5>예)aaa@gmail.com</h5>
+			<input type="email" name="email" placeholder="aaa@gmail.com" required>	<!--이메일 형식으로만 입력가능-->
+		</div>
+
+		<div>
+			<h4>하고싶은 말</h4>
+			<textarea cols="50" rows="10" required></textarea>
+		</div>
+
+		<hr>
+
+		<input type="submit" value="지원서 제출">
+
+	</form>
+
+</body>
+</html>
