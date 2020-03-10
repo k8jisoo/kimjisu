@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COLOR,FONT와 같은 스타일 변경 방법</title>
+	<style>
+		.myspan1{
+			color: rgb(255, 0, 0);
+			font-size: 16px;
+		}
+		.myspan2{
+			color: rgba(255, 0, 0, 0.5);
+			font-size: 1em;
+		}
+		.myspan3{
+			color: #ff0000;
+			font-size: 1.5em;
+		}
+		.myspan4{
+			color: #f00;
+		}
+		body > div{
+			font-size: 32px;
+			background-color: #ff0;
+			font-family: monospace;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span class="myspan1">my text is upper!</span><br>
+		<span class="myspan2">my text is upper!</span><br>
+		<span class="myspan3">my text is upper!</span><br>
+		<span class="myspan4">my text is upper!</span><br>	
+	</div>
+	<!--font-size em에서 16px 혹은 부모값(상속)이 기본값-->
+</body>
+</html>
