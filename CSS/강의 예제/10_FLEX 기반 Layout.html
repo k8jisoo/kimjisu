@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FLEX 기반 Layout</title>
+	<style>
+		.wrap{
+			background-color: slategray;
+			height: 500px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			justify-content: flex-end;
+		}
+
+		.wrap > div{
+			flex-grow: 1;
+			margin: 0.2rem;
+			height: 200px;
+			background-color: skyblue;
+			color: white;
+		}
+
+		.wrap > div:nth-child(2){
+			flex-grow: 2;
+		} 
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div>login</div>
+		<div>content</div>
+		<div>adv</div>
+	</div>
+
+</body>
+</html>
